@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books; index as i">
+            <td>{{i+1}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.genre}}</td>
+            <td>{{book.price}}</td>
+            <td><a><i (click)="updateBook(book)" class="fa-solid fa-pen text-success"></i></a>
+            </td>
+            <td>
+                <a (click)="deleteBook(book)"><i class="fa-solid fa-trash text-danger"></i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "w0311rivkalea": {
+      "hosting": {
+        "library": [
+          "w0311rivkalea"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "w0311rivkalea"
+  }
+}

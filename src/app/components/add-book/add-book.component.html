@@ -1,0 +1,18 @@
+<form #addBook="ngForm" (ngSubmit)="addNewBook()">
+    <div class="mb-3"><label for="exampleFormControlInput1" class="form-label">enter name</label><input type="email"
+            name="name" [(ngModel)]="book.name" #name="ngModel" required class="form-control"
+            id="exampleFormControlInput1" placeholder="name@example.com"></div>
+    <!-- <div class="mb-3"><label for="exampleFormControlInput1" class="form-label">Email address</label><input type="email" name="email" [(ngModel)]="book.mail"
+        #name="ngModel" required class="form-control" 
+            class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></div> -->
+    <div class="mb-3"><label for="exampleFormControlInput2" class="form-label">Uthor</label><input type="string"
+            class="form-control" name="author" [(ngModel)]="book.author" #name="ngModel" required class="form-control"
+            id="exampleFormControlInput2" placeholder="name@example.com"></div>
+    <div class="mb-3"><label for="exampleFormControlInput3" class="form-label">genre</label><input type="genre"
+            name="name" [(ngModel)]="book.genre" #genre="ngModel" required class="form-control" class="form-control"
+            id="exampleFormControlInput3" placeholder="name@example.com"></div>
+    <div class="mb-3"><label for="exampleFormControlInput4" class="form-label">price</label><input type="price"
+            name="price" [(ngModel)]="book.price" #price="ngModel" required class="form-control" class="form-control"
+            id="exampleFormControlInput4" placeholder="name@example.com"></div>
+    <button class="btn btn-success" type="submit"></button>
+</form>
